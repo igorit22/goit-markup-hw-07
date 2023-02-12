@@ -24,10 +24,25 @@
 
     <header class="page-header">
       <div class="container header-box">
-        <nav class="header-box-nav">
+        
           <a href="./index.html" title="Logo company" class="logo"
-            ><span class="logo-accent">WEB</span>STUDIO</a
-          >
+            ><span class="logo-accent">WEB</span>STUDIO</a>
+            <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        ><svg class="features-icon header-icon" width="32" height="22">
+          <use href="./images/icons.svg#icon-stroke"></use>
+        </svg>
+        </button>
+        <ul class="menu">
+          <li><a href="" class="link">About</a></li>
+          <li><a href="" class="link">Products</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+          <li><a href="" class="link">Career</a></li>
+        </ul>
+      </div>
+          <nav class="header-box-nav">
           <ul class="list site-nav">
             <li class="site-nav-item">
               <a href="./index.html" class="line site-nav-link page-accent current">Studio</a>
@@ -41,7 +56,7 @@
             </li>
           </ul>
         </nav>
-        <address class="">
+        <address class="header-address">
           <ul class="list contacts">
             <li class="contacts-item">
               <a href="mailto:info@devstudio.com" class="line contacts-link"
@@ -147,7 +162,7 @@
           <h2 class="sections-title team-title">Our Team</h2>
           <ul class="list team-list">
             <li class="team-cards">
-              <img src="./images/team1.jpg" alt="Mark Guerrero" width="264" class="team-photo">
+              <img src="./images/team/team1@1x.jpg" alt="Mark Guerrero" width="264" class="team-photo">
               <div class="team-persons"><h3 class="sections-subtitle team-subtitle">Mark Guerrero</h3>
               <p class="sections-text team-text">Product Designer</p>
             <ul class="team-soc-list list">
@@ -166,7 +181,7 @@
             </ul></div>              
             </li>
             <li class="team-cards">
-              <img src="./images/team2.jpg" alt="Tom Ford" width="264" class="team-photo">
+              <img src="./images/team/team2@1x.jpg" alt="Tom Ford" width="264" class="team-photo">
               <div class="team-persons"><h3 class="sections-subtitle team-subtitle">Tom Ford</h3>
               <p class="sections-text team-text">Frontend Developer</p><ul class="team-soc-list list">
                 <li class="team-soc-item"><a href="" class="team-soc-link link"><svg class="team-soc-icon" width="16" height="16">
@@ -184,7 +199,7 @@
               </ul></div>              
             </li>
             <li class="team-cards">
-              <img src="./images/team3.jpg" alt="Camila Garcia" width="264" class="team-photo">
+              <img src="./images/team/team3@1x.jpg" alt="Camila Garcia" width="264" class="team-photo">
               <div class="team-persons"><h3 class="sections-subtitle team-subtitle">Camila Garcia</h3>
               <p class="sections-text team-text">Marketing</p><ul class="team-soc-list list">
                 <li class="team-soc-item"><a href="" class="team-soc-link link"><svg class="team-soc-icon" width="16" height="16">
@@ -202,7 +217,7 @@
               </ul></div>              
             </li>
             <li class="team-cards">
-              <img src="./images/team4.jpg" alt="Daniel Wilson" width="264" class="team-photo">
+              <img src="./images/team/team4@1x.jpg" alt="Daniel Wilson" width="264" class="team-photo">
               <div class="team-persons"><h3 class="sections-subtitle team-subtitle">Daniel Wilson</h3>
               <p class="sections-text team-text">UI Designer</p><ul class="team-soc-list list">
                 <li class="team-soc-item"><a href="" class="team-soc-link link"><svg class="team-soc-icon" width="16" height="16">
@@ -337,5 +352,61 @@
       </div>
     </div>
     <script src="./scripts/modal.js"></script>
+    
+    <!-- ------------- Menu ------------- -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="customers-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <div class="nav">
+        <ul class="list site-nav">
+        <li class="site-nav-item">
+          <a href="./index.html" class="line site-nav-link page-accent">Studio</a>
+        </li>
+        <li class="site-nav-item">
+          <a href="./portfolio.html" class="line site-nav-link"
+            >Portfolio</a>
+        </li>
+        <li class="site-nav-item">
+          <a href="./contacts.html" class="line site-nav-link">Contacts</a>
+        </li>
+      </ul></div>
+    <address class="menu-address">
+      <ul class="list contacts">
+        <li class="contacts-item">
+          <a href="tel:+110001111111" class="line menu-tel"
+            >+11 (000) 111-11-11</a>
+        </li>
+        <li class="contacts-item">
+          <a href="mailto:info@devstudio.com" class="line menu-mail"
+            >info@devstudio.com</a>
+        </li>
+      </ul>
+    </address>
+    <ul class="team-soc-list-menu list">
+      <li class="team-soc-item"><a href="" class="team-soc-link link"><svg class="team-soc-icon" width="16" height="16">
+        <use href="./images/icons.svg#icon-instagram"></use>
+      </svg></a></li>
+      <li class="team-soc-item"><a href="" class="team-soc-link link"><svg class="team-soc-icon" width="16" height="16">
+        <use href="./images/icons.svg#icon-twitter"></use>
+      </svg></a></li>
+      <li class="team-soc-item"><a href="" class="team-soc-link link"><svg class="team-soc-icon" width="16" height="16">
+        <use href="./images/icons.svg#icon-facebook"></use>
+      </svg></a></li>
+      <li class="team-soc-item"><a href="" class="team-soc-link link"><svg class="team-soc-icon" width="16" height="16">
+        <use href="./images/icons.svg#icon-linkedin"></use>
+      </svg></a></li>
+    </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./scripts/mobile-menu.js"></script>
   </body>
 </html>
