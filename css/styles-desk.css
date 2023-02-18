@@ -214,6 +214,10 @@
   display: flex;
 }
 
+.container.footer-style {
+padding-left: 0;
+}
+
 .footer-style {
   display: flex;
   align-items: baseline;

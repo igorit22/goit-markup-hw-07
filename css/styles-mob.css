@@ -28,3 +28,11 @@
 
 /* ---------------Footer --------------*/
 
+/* ---------------Modal-------------- */
+
+@media screen and (min-width: 429px) {
+.modal {
+
+  width: 392px;
+}
+}
