@@ -39,7 +39,7 @@ address {
   text-decoration: none;
 }
 .list {
-  padding: 0;
+  /* padding: 0; */
   margin: 0;
   list-style: none;
 }
@@ -287,6 +287,7 @@ address {
 .hero {
   padding-bottom: 112px;
   padding-top: 112px;
+margin: 0 auto;
 
   background-color: var(--second--text-color);
   color: #ffffff;
@@ -396,6 +397,7 @@ background-image: linear-gradient(to right,rgba(46, 47, 66, 0.7),rgba(46, 47, 66
   flex-direction: row;
   flex-wrap: wrap;
   gap: 72px;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -699,7 +701,9 @@ background-image: linear-gradient(to right,rgba(46, 47, 66, 0.7),rgba(46, 47, 66
 
 .footer-subscribe-input {
   display: block;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
   height: 40px;
   font-size: 12px;
   line-height: 2;
@@ -774,7 +778,7 @@ background-image: linear-gradient(to right,rgba(46, 47, 66, 0.7),rgba(46, 47, 66
 .modal {
   position: absolute;
   /* top: 50%; */
-  top: 5%;
+  top: 25px;
   left: 50%;
   /* transform: translate(-50%, -50%); */
   transform: translate(-50%);

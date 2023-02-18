@@ -127,7 +127,7 @@
 @media screen and (min-width: 768px) {
 
   .hero {
-    height: 436px;
+    /* height: 436px; */
     padding-bottom: 112px;
     padding-top: 112px;
   
@@ -207,20 +207,21 @@
     .features-list {
         column-gap: 24px;
         row-gap: 72px; 
+        
     }
   .features-item {
     width: calc((100% - 56px) / 2);
   }
     
-    .features-item {
-        text-align: left;
-    }
+  .features-item:nth-child(-2n+3) {
+    padding-left: 40px;
+}
+  
     .sections-subtitle {
         text-align: left;
     }
-  
-  
-  }
+
+}
 
 /* --------------What are we doing---- */
 
@@ -315,7 +316,7 @@ padding-left: 108px;
 
 .footer-subscribe-input {
   display: block;
-  width: 264px;
+  /* width: 264px; */
 }
 
   .footer-subscribe-btn {
@@ -333,10 +334,13 @@ padding-left: 108px;
     gap: 24px;
   }
 
+
+/* ---------------Modal-------------- */
+
   .modal {
-    top: 50%;
+    top: 25px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     width: 408px;
     
   }

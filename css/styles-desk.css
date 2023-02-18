@@ -95,7 +95,6 @@
     }
 
     .hero {
-  height: 600px;
   padding-bottom: 188px;
   padding-top: 188px;
 
@@ -125,6 +124,10 @@
 .features-item {
   width: calc((100% - 72px) / 4);
 
+}
+
+.features-item:nth-child(-2n+3) {
+  padding-left: 0;
 }
 
 .features-icon-item{
